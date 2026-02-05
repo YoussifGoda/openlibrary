@@ -102,7 +102,7 @@ $ is_privileged_user = ctx.user and (ctx.user.is_admin() or ctx.user.is_super_li
           </label>
         </div>
         <form class="search-bar-input" action="/search" method="get" role="search">
-          <input type="text" name="q" placeholder="$_('Search')" aria-label="Search" autocomplete="off">
+          <input type="text" name="q" placeholder="$_('Search')" aria-label="Search" autocomplete="off" minlength="2">
           <input name="mode" type="checkbox" aria-hidden="true" aria-label="Search checkbox" checked="checked" value="" id="ftokenstop" class="hidden instantsearch-mode">
           <input type="submit" value="" class="search-bar-submit" aria-label="Search submit">
           <div class="vertical-separator"></div>
